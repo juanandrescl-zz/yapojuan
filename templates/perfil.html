@@ -1,0 +1,25 @@
+<ion-view title="Perfil" id="page3">
+    <ion-content padding="true" class="has-header">
+        <div class="list card">
+            <div class="item item-divider">Información</div>
+                   <img src="{{authData.facebook.profileImageURL}}"	>
+            <h2>{{authData.facebook.email}}</h2>
+            <p>{{authData.facebook.cachedUserProfile.location.name}}</p>
+                <p>{{authData.facebook.cachedUserProfile.user.bio}}</p>
+            <p>{{authData.facebook.cachedUserProfile.cover.source}}</p>
+            <div class="item item-body"></div>
+        </div>
+        <div class="list card">
+            <div class="item item-divider">Tarjeta de Crédito</div>
+            <div class="item item-body"></div>
+        </div>
+        <div class="list card">
+            <div class="item item-divider">email</div>
+            <div class="item item-body"></div>
+        </div>
+        <div class="list card">
+            <div class="item item-divider">Teléfono</div>
+            <div class="item item-body"></div>
+        </div>
+    </ion-content>
+</ion-view>
